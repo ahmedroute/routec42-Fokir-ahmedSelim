@@ -1,0 +1,878 @@
+body {
+  margin: 0px;
+  font-family: "Roboto";
+  overflow: auto;
+}
+.clear-fix {
+  clear: both;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  background-image: url("images/hero img.jpg");
+  background-color: rgb(59, 59, 59);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center top;
+  color: white;
+  text-align: center;
+}
+
+.home .nav {
+  overflow: auto;
+}
+.home .logo {
+  color: #ff305b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  float: left;
+  padding-left: 80px;
+}
+.home ul {
+  overflow: auto;
+
+  width: fit-content;
+  float: right;
+}
+.home li {
+  color: white;
+  list-style: none;
+  font-size: 1rem;
+  float: left;
+  margin: 5px 10px;
+  font-weight: 300;
+  transition: all 0.4s;
+}
+
+.home li:hover {
+  color: #ff305b;
+  cursor: pointer;
+}
+
+.home li:first-child {
+  color: #ff305b;
+}
+
+.home .links {
+  float: right;
+  padding-right: 90px;
+}
+
+.home .links input {
+  display: none;
+}
+
+.home .links .checkbtn {
+  display: none;
+}
+
+.home h2 {
+  font-size: 1.5rem;
+  font-family: "Source Sans 3";
+  margin-top: 200px;
+  margin-bottom: 10px;
+}
+.home h1 {
+  color: #ff305b;
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.home h3 {
+  font-family: "Source Sans 3";
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
+.home .designer {
+  display: inline-block;
+  border-right: 2px solid wheat;
+  overflow: hidden;
+  vertical-align: bottom;
+  width: fit-content;
+  padding-right: 5px;
+
+  animation: typing 3s infinite ease-in-out;
+}
+@keyframes typing {
+  0% {
+    width: 92.047px;
+  }
+  25% {
+    width: 0px;
+    padding-right: 0px;
+  }
+  50% {
+    width: 92.047px;
+    padding-right: 5px;
+  }
+  100% {
+    width: 92.047px;
+  }
+}
+
+/* About */
+
+.about {
+  height: fit-content;
+  overflow: auto;
+  padding: 70px 70px;
+}
+
+.aboutContainer {
+  max-width: 1000px;
+  /* overflow: auto; */
+  margin: auto;
+}
+
+.about .imageFrame {
+  width: 50%;
+  float: left;
+}
+
+.frame {
+  border: 8px solid #555;
+  width: 360px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.frame img {
+  position: relative;
+  width: 100%;
+}
+
+.frame .slider {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.frame .overlay {
+  position: absolute;
+  background-color: #00000086;
+  opacity: 0;
+
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.4s;
+}
+
+.frame .overlay {
+  text-align: center;
+}
+.frame .overlay .socials {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+
+  text-align: center;
+  margin: auto;
+}
+
+.frame .overlay .socials i {
+  margin: 10px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.frame .overlay .socials i:hover {
+  color: #ff305b;
+  cursor: pointer;
+}
+
+.frame:hover .overlay {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.about .infos {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+.about .infos h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 34px;
+  font-weight: 600;
+  padding-left: 13px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 0.7;
+}
+
+.about .infos h1::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #ff305b;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.about .infos p {
+  font-size: 1rem;
+  color: #555;
+  font-family: "Roboto";
+  line-height: 25px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+
+.about .infos .container {
+  width: 100%;
+}
+.about .infos hr {
+  border-top: 1px dashed #555;
+}
+.about .infos .personal {
+  overflow: auto;
+  width: 100%;
+}
+
+.about .infos div {
+  float: left;
+  width: 230px;
+}
+
+.about .infos span {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.about .infos h5 {
+  color: #555;
+  margin: 15px 0px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.about .infos button {
+  background-color: #ff305b;
+  color: white;
+  border: 0px;
+  padding: 14px 30px;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin: 15px 10px 0px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.about .infos button:hover {
+  background-color: #ec2403;
+}
+
+/* service */
+
+.service {
+  overflow: auto;
+  background-color: #f1f1f1;
+  height: fit-content;
+  text-align: center;
+  padding: 70px 90px;
+}
+
+.service h1 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+.service h1::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.service h1::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.service .container {
+  overflow: auto;
+  padding: 20px;
+}
+.oneService {
+  width: 25%;
+  float: left;
+}
+
+.oneService div {
+  padding: 40px 20px 20px;
+  transition: all 0.4s;
+}
+.oneService div:hover {
+  background-color: white;
+  box-shadow: 5px 5px 20px #33333333;
+}
+
+.oneService i {
+  display: inline-block;
+  scale: 2.3;
+  color: #ff305b;
+  transition: all 0.4s;
+}
+
+.oneService:hover i {
+  scale: 3;
+}
+
+.oneService h3 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.oneService p {
+  color: #555;
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+  overflow: auto;
+
+  height: fit-content;
+  text-align: center;
+  padding: 70px 90px;
+}
+
+.portfolio h1 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+.portfolio h1::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.portfolio h1::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.portfolio .options {
+  margin: auto;
+}
+
+.portfolio ul {
+  overflow: auto;
+  text-align: center;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+.portfolio li {
+  list-style: none;
+  float: left;
+  margin: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.portfolio li:hover {
+  color: #ff305b;
+}
+
+.portfolio li:first-child {
+  color: #ff305b;
+}
+
+.portfolio .images-container {
+  max-width: 1000px;
+  overflow: auto;
+  margin: auto;
+}
+
+.portfolio .oneImage {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
+.portfolio .oneImage .portofolio-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background-color: #333;
+  opacity: 0;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+.portfolio .oneImage:hover .portofolio-overlay {
+  opacity: 0.7;
+}
+.portfolio .oneImage img {
+  width: 100%;
+}
+
+/* Numbers */
+
+.numbers {
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: auto;
+  padding: 90px 50px;
+}
+
+.numbers .oneStatistic {
+  float: left;
+  width: 25%;
+}
+
+.numbers .oneStatistic i {
+  scale: 1.6;
+  color: #ff305b;
+}
+
+.numbers .oneStatistic h3 {
+  color: #555;
+  margin: 30px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.numbers .oneStatistic p {
+  margin: 0px;
+  color: #555;
+  font-family: "Source Sans 3";
+  font-weight: 600;
+}
+
+/* Feedback */
+
+.feedback {
+  overflow: auto;
+
+  height: fit-content;
+
+  padding: 70px 90px 100px;
+}
+
+.feedback h1 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.feedback h1::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.feedback h1::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.feedback .onefeedback {
+  margin: auto;
+  max-width: 750px;
+  border-radius: 5px;
+
+  background: linear-gradient(
+    133deg,
+    rgba(255, 48, 91, 1) 0%,
+    rgba(255, 48, 91, 1) 20%,
+    rgba(241, 241, 241, 1) 20.08%,
+    rgba(241, 241, 241, 1) 100%
+  );
+  overflow: auto;
+  padding: 20px 0px 60px;
+}
+
+.feedback .onefeedback div:first-child {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+.feedback .onefeedback img {
+  border-radius: 55px;
+  width: 110px;
+  margin-top: 50px;
+}
+.feedback .onefeedback .infos {
+  float: left;
+  width: 70%;
+  font-family: "Source Sans 3";
+}
+
+.feedback .onefeedback .infos h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feedback .onefeedback .infos h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #777;
+  margin: 5px 0px;
+}
+
+.feedback .onefeedback .infos h4 i {
+  margin: 5px 5px;
+}
+
+.feedback .onefeedback .infos p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  font-style: italic;
+  width: 90%;
+}
+
+.feedback .onefeedback .infos .rating i {
+  color: #f1c30d;
+}
+
+.feedback .scroller {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.feedback .scroller .selected {
+  display: inline-block;
+  width: 25px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff305b;
+}
+
+.feedback .scroller .next {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff305b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Blog */
+
+.blog {
+  overflow: auto;
+  background-color: #f1f1f1;
+  height: fit-content;
+
+  padding: 70px 90px;
+}
+
+.blog h1 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.blog h1::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.blog h1::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.blog .container {
+  overflow: auto;
+}
+
+.blog .container .oneBlog {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+
+  padding: 0px 15px;
+}
+.blog .container .oneBlog div {
+  background-color: #ffffff;
+}
+.blog .container .oneBlog img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.blog .container .oneBlog iframe {
+  border: 0px;
+  cursor: pointer;
+  aspect-ratio: 1.78;
+}
+
+.blog .container .oneBlog .info {
+  padding: 5px 15px;
+}
+
+.blog .container .oneBlog h4 {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+.blog .container .oneBlog h2 {
+  font-family: "Source Sans 3";
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.blog .container .oneBlog h4:last-child:hover {
+  color: #ff305b;
+  cursor: pointer;
+}
+
+.blog .container .oneBlog p {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*  Contact US*/
+
+.contact {
+  overflow: auto;
+
+  height: fit-content;
+  font-family: "Source Sans 3";
+  padding: 70px 90px;
+}
+
+.contact h1 {
+  color: #333;
+  font-family: "Source Sans 3";
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact h1::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.contact h1::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.contact form {
+  max-width: 750px;
+  margin: auto;
+}
+
+.contact form div input:nth-child(1) {
+  float: left;
+  width: 48%;
+}
+
+.contact form div input:nth-child(2) {
+  float: right;
+  width: 48%;
+}
+
+.contact form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-family: "Roboto";
+  color: #9b9b9b;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border: 1px solid #ff305b;
+
+  outline: none;
+}
+
+.contact form textarea {
+  width: 100%;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact form button {
+  background-color: #ff305b;
+  color: white;
+  border: 0px;
+  padding: 14px 20px;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin: 15px 10px 0px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.contact form button:hover {
+  background-color: #ec2403;
+}
+
+/* footer */
+
+.footer {
+  overflow: auto;
+  background-color: #333;
+  height: fit-content;
+  text-align: center;
+  padding: 60px 90px 40px;
+  color: white;
+}
+
+.footer .socials i {
+  color: white;
+  margin: 0px 10px;
+  scale: 0.8;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.footer .socials i:hover {
+  color: #ff305b;
+}
+
+.footer p span {
+  color: #ff305b;
+  cursor: pointer;
+}
+
+.footer p span:hover {
+  text-decoration: underline;
+}
+
+/*                 */

@@ -1,0 +1,166 @@
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .about .infos {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .infos {
+    width: 38%;
+  }
+  .oneService {
+    width: 50%;
+  }
+  .portfolio .oneImage {
+    width: 50%;
+  }
+  .home .links {
+    padding-right: 67px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about,
+  .service,
+  .portfolio,
+  .numbers,
+  .feedback,
+  .blog,
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home .links .checkbtn {
+    display: inline-block;
+    margin-top: 20px;
+    z-index: 99;
+    position: relative;
+  }
+  .home h2 {
+    margin-top: 254px;
+  }
+  .home .links ul {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    padding: 0px;
+    width: 60vw;
+    margin: 0 20vw;
+    z-index: 90;
+    left: 0px;
+    top: 60px;
+    background-color: #333333;
+    transition: all 0.4s;
+    height: 0px;
+  }
+  .home .links ul li {
+    display: block;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .home:has(input:checked) .links ul {
+    display: block;
+    position: fixed;
+    height: 200px;
+  }
+
+  .about {
+    height: fit-content;
+    overflow: auto;
+    padding: 70px 0px;
+  }
+
+  .about .imageFrame {
+    width: 100%;
+    float: none;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .about .infos {
+    overflow: auto;
+    width: 90%;
+    max-width: 420px;
+    display: block;
+    float: none;
+    position: relative;
+    margin: auto;
+  }
+  .aboutContainer {
+    overflow: auto;
+  }
+  .about .infos .container {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .frame {
+    border: 0px solid #555;
+    margin: auto;
+    width: 90%;
+    max-width: 420px;
+  }
+  .frame .slider {
+    left: 0px;
+    top: 0px;
+  }
+  .oneService {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  .portfolio .oneImage {
+    float: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+  }
+  .numbers .oneStatistic {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .feedback .onefeedback div:first-child {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .feedback .onefeedback .infos {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog .container .oneBlog {
+    box-sizing: border-box;
+    float: none;
+    display: block;
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 40px;
+  }
+  .contact form div input:nth-child(1) {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .contact form div input:nth-child(2) {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
